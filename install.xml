@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3" method="upgrade">
+    <name>com_parstim</name>
+    <creationDate>Febrari 2019</creationDate>
+    <author>Tim</author>
+    <copyright>(C) 2019 - 2019 All rights reserved.</copyright>
+    <authorEmail>tim-kap@ya.ru</authorEmail>
+    <authorUrl>https://www.zaxodim.ru</authorUrl>
+    <version>1.0.0</version>
+    <description>COM_PARSTIM_XML_DESCRIPTION</description>
+
+    <files folder="site">
+        <folder>assets</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>language</folder>
+        <folder>models</folder>
+        <folder>tables</folder>
+        <folder>views</folder>
+
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>parstim.php</filename>
+    </files>
+
+    <administration>
+        <menu  link="option=com_parstim">COM_PARSTIM_XML_MENU_COMPONENT</menu>
+        <submenu>
+            <menu
+                    link="option=com_parstim"
+                    view="parstim"
+                    img="class:parstim"
+                    alt="ParsTim/ParsTim"
+            >
+                COM_PARSTIM_XML_SUBMENU_PARSTIM
+            </menu>
+            <menu
+                    link="option=com_configuration"
+                    view="configuration"
+                    img="class:configuration"
+                    alt="ParsTim/configuration"
+            >
+                COM_PARSTIM_XML_SUBMENU_CONFIGURATION
+            </menu>
+
+        </submenu>
+        <files folder="admin">
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>parstim.php</filename>
+
+        </files>
+        <languages folder="admin">
+            <!--language tag="en-GB">language/ru-RU.com_parstim.ini</language-->
+            <language tag="en-GB">language/ru-RU/ru-RU.com_parstim.sys.ini</language>
+        </languages>
+
+    </administration>
+</extension>
