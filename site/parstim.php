@@ -2,3 +2,4 @@
 defined('_JEXEC') or die;
 
 echo "парсер";
+?>
